@@ -1,21 +1,51 @@
 import React, { useState } from 'react';
 
-import Style from './textInputWithButton.css'
 import TextInput from '../TextInput';
+
+import Style from './textInputWithButton.css'
+
+
+const ValidateEmail = (mail) => {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
+        return true;
+    }
+    return false;
+}
 
 const TextInputWithButton = props => {
     const [value, setValue] = useState("");
+    const [info, setInfo] = useState("");
+    const [error, setError] = useState(false);
+
     const onChange = (e) => {
         setValue(e.target.value);
-    }
-    return <div className={Style.container}>
-        <TextInput
-            placeholder={props.placeholder}
-            onChange={onChange}
-            value={value}
-        />
-        <button className={Style.buttonContainer}>{props.buttonText}</button>
-    </div>
+    };
+
+    const onClick = e => {
+        if (ValidateEmail(value)) {
+            setInfo("We'll let you know when we are online.");
+            setError(false);
+        } else {
+            setInfo("Please enter a valid email address");
+            setError(true);
+        }
+    };
+
+    return <>
+        <div className={Style.container}>
+            <TextInput
+                placeholder={props.placeholder}
+                onChange={onChange}
+                value={value}
+            />
+            <button
+                onClick={onClick}
+                className={Style.buttonContainer}>
+                {props.buttonText}
+            </button>
+        </div>
+        <div className={error ? Style.error : Style.info}>{info}</div>
+    </>
 };
 
 export default TextInputWithButton;

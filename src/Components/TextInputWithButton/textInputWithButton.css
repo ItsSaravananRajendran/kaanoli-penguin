@@ -1,6 +1,14 @@
 .container{
-    display: flex;
-    
+    display: flex;    
+    padding-bottom: 5px; 
+}
+
+.info{
+    color:#adff2f;
+}
+
+.error{
+    color:salmon;
 }
 
 .buttonContainer{
@@ -14,4 +22,4 @@
 .buttonContainer:active,
 .buttonContainer:focus {
     outline:none;
- }
+}

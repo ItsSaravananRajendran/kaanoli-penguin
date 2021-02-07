@@ -4,8 +4,7 @@ function VideoGrapher(props) {
     return (
         <svg
             data-name="Layer 1"
-            width={1150.44}
-            height={675.56}
+            width="100%"
             viewBox="0 0 1150.44 675.56"
             {...props}
         >
