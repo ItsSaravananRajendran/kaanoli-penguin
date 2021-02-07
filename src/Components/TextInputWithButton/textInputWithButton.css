@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+}
+
+.buttonContainer{
+    background-color: #892CDC;
+    color:#ffffff;
+    font-weight: 600;
+    padding: 0 15px;
+    border:none;
+}
+
+.buttonContainer:active,
+.buttonContainer:focus {
+    outline:none;
+ }
