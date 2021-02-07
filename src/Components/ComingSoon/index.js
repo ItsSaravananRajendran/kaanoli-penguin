@@ -3,14 +3,14 @@ import Style from './comingSoon.css';
 
 import TextInputWithButton from "../TextInputWithButton";
 
-import fillerImage from '../../../assets/filler.png'
+import VideoGrapher from '../../Icons/videoGraphers'
 
 
 
 
 const ComingSoon = props => (<div className={Style.container}>
     <div className={Style.rightContainer}>
-        <img src={fillerImage} alt="designer with desktop" width={"100%"} />
+        <VideoGrapher />
     </div>
     <div className={Style.leftContainer}>
         <div className={Style.comingSoonText}>We're Coming Soon!</div>
