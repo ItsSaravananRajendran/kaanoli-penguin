@@ -39,12 +39,7 @@ module.exports = {
                                 localIdentName: "[name]_[local]",
                             },
                             importLoaders: 1,
-                            localsConvention: "camelCase",
-                            sourceMap: true,
                         },
-                    },
-                    {
-                        loader: "postcss-loader",
                     },
                 ],
             },
