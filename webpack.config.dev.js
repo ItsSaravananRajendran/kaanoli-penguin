@@ -58,7 +58,7 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
-            filename: "styles/styles.[hash].css",
+            filename: "styles/styles.[chunkhash].css",
         }),
         new HtmlWebPackPlugin({
             template: "./public/index.html",
