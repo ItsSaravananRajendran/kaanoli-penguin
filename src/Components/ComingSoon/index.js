@@ -3,11 +3,12 @@ import Style from './comingSoon.css';
 
 import TextInputWithButton from "../TextInputWithButton";
 import VideoGrapher from '../../Icons/videoGraphers'
-
+import LogoWithName from '../../Icons/LogoWithName';
 
 
 
 const ComingSoon = props => (<div className={Style.container}>
+    <LogoWithName className={Style.icon} />
     <div className={Style.leftContainer}>
         <VideoGrapher />
     </div>

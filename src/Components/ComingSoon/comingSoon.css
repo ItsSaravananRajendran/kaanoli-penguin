@@ -1,7 +1,7 @@
 .container{
     display:flex;
     flex-direction: row;
-    background-color: #000000;
+    background-color: #DCDCDC;
     height: 100vh;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .comingSoonText{
-    color:#ffffff;
+    color:#363636;
     font-weight: 600px;
     font-size:42px;
     padding-bottom:10px;
@@ -33,6 +33,13 @@
     font-size:28px;
     font-weight: 600px;
     padding-bottom: 10px;
+}
+
+.icon{
+    position: fixed;
+    width: 200px;
+    top:50px;
+    left:50px;
 }
 
 @media (max-width:420px) {
