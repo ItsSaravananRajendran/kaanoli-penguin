@@ -43,6 +43,12 @@
 }
 
 @media (max-width:420px) {
+    .icon{
+        left:50%;
+        top:30px;
+        transform: translateX(-50%);
+    }
+
     .container{
         flex-direction: column;
         min-height: 100vh;
@@ -57,7 +63,7 @@
 
     .leftContainer{
         width: 100%;
-        padding:30px 0;
+        padding: 110px 0 50px 0;
     }
 
     .comingSoonText{
