@@ -29,14 +29,14 @@
 }
 
 .notifyMeText{
-    color:#6c63ff;
+    color:#4a47a3;
     font-size:28px;
     font-weight: 600px;
     padding-bottom: 10px;
 }
 
 .icon{
-    position: fixed;
+    position: absolute;
     width: 200px;
     top:50px;
     left:50px;
