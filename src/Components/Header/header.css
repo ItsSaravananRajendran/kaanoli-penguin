@@ -1,11 +1,21 @@
 .icon{
     width: 200px;
+    margin-left:80px;
 }
 
 .headerContainer{
+    display: flex;
     position: absolute;
     width: 100%;
-    padding: 35px 0 35px 80px;
+    padding: 35px 0 35px 0px;
+}
+
+.rightSide{
+    position: absolute;
+    right: 80px;
+    font-size: 34px;
+    color: #4a47a3;
+    text-decoration: underline;
 }
 
 @media (max-width:420px){
