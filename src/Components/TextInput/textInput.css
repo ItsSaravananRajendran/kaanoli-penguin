@@ -2,6 +2,8 @@
     display: flex;
     background-color: #363636;
     padding:10px 0 10px 25px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
 }
 
 .inputContainer{

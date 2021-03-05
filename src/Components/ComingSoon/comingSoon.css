@@ -1,7 +1,7 @@
 .container{
     display:flex;
     flex-direction: row;
-    background-color: #DCDCDC;
+    background-color: #f8f8f8;
     height: 100vh;
 }
 
@@ -38,7 +38,7 @@
 .icon{
     position: absolute;
     width: 200px;
-    top:50px;
+    top:35px;
     left:50px;
 }
 
