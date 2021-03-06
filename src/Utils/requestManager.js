@@ -17,7 +17,7 @@ const RequestManager = (
         });
 };
 
-const apiHost = "https://api.dev.me:7500/";
+const apiHost = "http://api.kaanoli.me:7500/";
 
 const ApiHandler = {
     subscribe: (data, successCallBack, errorCallBack) => {
