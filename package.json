@@ -6,7 +6,7 @@
   "scripts": {
     "dev:serve": "webpack serve --open --config webpack.config.dev.js --host 0.0.0.0",
     "dev": "rm -rf dist && webpack --watch --config webpack.config.dev.js",
-    "build": "NODE_ENV=production webpack  --config production webpack.config.prod.js"
+    "build": "NODE_ENV=production webpack  --config  webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
