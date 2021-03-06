@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import TextInput from '../TextInput';
-
+import { ApiHandler } from '../../Utils/requestManager.js';
 import Style from './textInputWithButton.css'
 
 
@@ -23,8 +23,10 @@ const TextInputWithButton = props => {
 
     const onClick = e => {
         if (ValidateEmail(value)) {
-            setInfo("We'll let you know when we are online.");
-            setError(false);
+            ApiHandler.subscribe({ email: value }, () => {
+                setInfo("We'll let you know when we are online.");
+                setError(false);
+            });
         } else {
             setInfo("Please enter a valid email address");
             setError(true);
